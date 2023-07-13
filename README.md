@@ -7,4 +7,11 @@ Voice signal processing techniques, such as FFT (Fast Fourier Transform) and Goe
 
 The Geortzel algorithm, originally developed for DSP applicatios for the extraction of the different frequency components of a signal in industrial application, has been shown to be more efficient than FFT also in medical applications, where the computational and memory resources could be suboptimal with respect to the number of voice samples to analyze.
 
-_Citation information will follow_
+## References
+1. paper
+_More recent citation information will follow_
+
+## Todo
+
+- [x] create Github repository :tada:
+- [ ] add Java source code
