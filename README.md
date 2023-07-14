@@ -5,7 +5,7 @@ Dysphonia is the impairment of voice production, caused by structural or functio
 
 Voice signal processing techniques, such as FFT (Fast Fourier Transform) and Goertzel algorithm, can accelerate early detection of potential problems by extracting frequency features from simple voice signal containing few seconds of vowels vocalizations.
 
-The Geortzel algorithm, originally developed for DSP applicatios for the extraction of the different frequency components of a signal in industrial application, has been shown to be more efficient than FFT also in medical applications, where the computational and memory resources could be suboptimal with respect to the number of voice samples to analyze.
+The Geortzel algorithm, originally developed for DSP applications for the extraction of the different frequency components of a signal in industrial application, has been shown to be more efficient than FFT also in medical applications, where the computational and memory resources could be suboptimal with respect to the number of voice samples to analyze.
 
 ## References
 1. paper
