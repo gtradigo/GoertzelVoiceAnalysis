@@ -1,0 +1,27 @@
+function [fft] = fft(signal)
+
+  % Check if n is a power of 2
+  if rem(numel(signal), 2) ~= 0
+    throw(MException('fft:signalNotPowerOfTwo', ...
+      'Signal must be a power of 2.'));
+  end
+
+  % Compute the DFT of signal
+  fft = zeros(numel(signal), 1);
+  for i = 1:numel(signal)
+    fft(i) = signal(i);
+  end
+
+  for k = 2:numel(signal):numel(signal)
+    for i = 1:numel(signal)
+      if i + k > numel(signal)
+        break;
+      end
+
+      w = exp(-1i * 2 * pi * i / k);
+      fft(i + k) = fft(i + k) + w * fft(i);
+    end
+  end
+
+  return;
+end

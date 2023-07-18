@@ -1,0 +1,24 @@
+function [amplitude] = goertzel(signal, frequency)
+
+  % Check if n is a power of 2
+  if rem(numel(signal), 2) ~= 0
+    throw(MException('goertzel:signalNotPowerOfTwo', ...
+      'Signal must be a power of 2.'));
+  end
+
+  % Compute the DFT of signal
+  n = numel(signal);
+  r = zeros(n, 1);
+  c = zeros(n, 1);
+  w = exp(-1i * 2 * pi * frequency / n);
+  w_squared = w * w;
+
+  for i = 1:n
+    r = r + signal(i) * (c + w * (r - c));
+    c = c + w_squared * (r - c);
+  end
+
+  amplitude = abs(r);
+
+  return;
+end
