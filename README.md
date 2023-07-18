@@ -9,7 +9,7 @@ The Goertzel algorithm, originally developed for DSP applications for the extrac
 
 ## References
 1. Vizza, P., Mirarchi, D., Tradigo, G., Redavide, M., Bossio, R. B., & Veltri, P. (2017). Vocal signal analysis in patients affected by Multiple Sclerosis. _Procedia Computer Science_, _108_, 1205-1214.
-2. Cesari, U., De Pietro, G., Marciano, E., Niri, C., Sannino, G., & Verde, L. (2018). A new database of healthy and pathological voices. Computers & Electrical Engineering, 68, 310-321.
+2. Cesari, U., De Pietro, G., Marciano, E., Niri, C., Sannino, G., & Verde, L. (2018). A new database of healthy and pathological voices. _Computers & Electrical Engineering_, _68_, 310-321.
 
 ## Datasets
 
